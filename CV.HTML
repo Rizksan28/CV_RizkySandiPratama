@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizky Sandi Pratama</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .cv-container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            width: 35%;
+            background: #061b52;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 0;
+            border: 5px solid white;
+        }
+        .contact-info, .personal-info, .education, .languages {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .content {
+            width: 65%;
+            padding: 20px;
+        }
+        header h1 {
+            color: #061b52;
+        }
+        h2 {
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            gap: 8px; 
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #2980b9;
+            font-size: 14px; 
+            font-weight: bold;
+        }
+        .section-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .section-button a {
+            display: inline-block;
+            background: #4a7bd8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .section-button a:hover {
+            background: #365fa0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <aside class="sidebar">
+            <img src="foto rizky.jpeg" alt="Foto Profil" class="profile-pic">
+            <div class="section-button">
+                <a>Kontak Saya</a>
+            </div>
+            <div class="contact-info">
+                <p><strong>📞</strong> 08116362805</p>
+                <p><strong>✉️</strong> rizkysandipratama28@gmail.com</p>
+                <p><strong>📷</strong> @Rizksan27</p>
+            </div>
+            <div class="section-button">
+                <a>Detail Data Pribadi</a>
+            </div>
+            <div class="personal-info">
+                <p><strong>Tempat, Tanggal Lahir:</strong> Bekasi, 2 Agustus 2005</p>
+                <p><strong>Kebangsaan:</strong> Indonesia</p>
+                <p><strong>Tempat Tinggal:</strong> Perumahan Grand Mutiara 1</p>
+            </div>
+            <div class="section-button">
+                <a href="form.html" target="_blank">Form</a>
+            </div>
+            <div class="languages">
+            </div>
+        </aside>
+        <main class="content">
+            <header>
+                <h1>Rizky Sandi Pratama</h1>
+                    <p>Mahasiswa Sistem Informasi Telkom University Jakarta yang saat ini sedang menempuh semester 4, memiliki pengalaman dalam organisasi dan kepemimpinan. Aktif sebagai wakil Kepala Departemen Humas serta asisten praktikum Sistem Enterprise. Memiliki keterampilan public speaking, analisis, dan desain konten. Bersemangat untuk belajar, menambah wawasan dan berkembang.</p>
+            </header>
+            <section class="Pendidikan">
+                <h2>Pendidikan</h2>
+                <p><b>Universitas Telkom Jakarta (September 2023 - Saat ini)</b></p>
+                <p><b>Sistem Informasi (IPK 3.77/4.0)</b></p>
+            </section>
+            <section class="Pengalaman">
+                <h2>Pengalaman</h2>
+                <p><b> Asisten Praktikum Mata Kuliah Sistem Enterprise</b></p>
+                <p><b>(Oktober 2024 - Desember 2024)</b></p>
+                <ul type="circle">
+                    <li> Melakukan Pengajaran dan pengarahan dalam praktikum sistem enterprise dengan menggunakan aplikasi SAP</li>
+                    <li> Melakukan penilaian dan evaluasi terhadap 42 mahasiswa sistem enterprise</li>
+                    <li> Berhasil meluluskan 42 mahasiswa sistem enterprise melalui penilaian praktikum dan ujian sertifikasi</li>
+                </ul>
+                <p><b> Koordinator Acara Pengenalan Kehidupan Kampus Bagi Mahasiswa Baru program studi sistem informasi Telkom University Jakarta</b></p>
+                <p><b>(Juli 2024 - September 2024)</b></p>
+                <ul type="circle">
+                    <li> Berkoordinasi dengan 4 bidang terkait perihal kebutuhan dan informasi seputar acara</li>
+                    <li> Membuat rundown dan alur acara</li>
+                    <li> Membuat rencana cadangan untuk mengantisipasi resiko kendala selama acara berlangsung</li>
+                    <li> Berhasil melaksanakan acara dengan total 200+ peserta selama 2 hari dengan tepat waktu dan respon yang memuaskan</li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2>Kemampuan, Bahasa, dan Sertifikasi</h2>
+                <ul type="circle">
+                    <li>Soft Skill : Public Speaking, Berpikir Kritis, Percaya Diri, Membangun Relasi</li>
+                    <li>Hard Skill : MS Office (Word, Excel, PowerPoint), SAP, Adobe (Photoshop, Lightroom), Canva</li>
+                    <li>Bahasa : Indonesia (Native), Inggris (Intermediate/EPRT Score:480). Prancis (Basic)</li>
+                    <li>Sertifikasi : Fundamental UI Design by Coding Studio, SAP</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

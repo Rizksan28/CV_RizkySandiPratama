@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kontak</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        button {
+            width: 80%;
+            padding: 12px;
+            background: #5cb85c;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        #message {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Kontak</h2>
+        <form id="contactForm">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <input type="tel" id="telepon" placeholder="Nomor Telepon" required>
+            <input type="text" id="instansi" placeholder="Nama Instansi" required>
+            <div class="button-container">
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("message").innerText = "Pesan Anda telah diterima. Saya akan segera menghubungi Anda kembali.";
+            this.reset();
+        });
+    </script>
+</body>
+</html>
